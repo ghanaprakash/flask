@@ -6,6 +6,25 @@
     <title>Aathish</title>
 </head>
 <body>
-    <h2>Hi parakash</h2>
+    {%if name=="prakash"%}
+        <h2>Hi {{name}}</h2><br><br>
+    {%elif name=="saravana"%}    
+        <h1>hellow {{name}}</h1>
+    {%endif%}
+    
+    {%for i in range(1,11)%}
+    <h3>prakash</h3>
+    {%endfor%}
+
+    {%if msg%}
+    <h2>{{msg}}</h2>
+    {%endif%}
+    <form action="/" method="post">
+        <input type="text" name="username">
+        <input type="password" name="pass">
+        <input type="submit" value="login">
+
+    </form>
+
 </body>
 </html>
